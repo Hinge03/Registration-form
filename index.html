@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WITEducation</title>
+<style>
+body{ background-color:cornsilk;
+    
+      font-family:ariel;
+}
+.login{ width:500px;
+      overflow:hidden;
+      background-color:lightgrey;
+      padding:40px; 
+      margin:0 auto; 
+      border-radius:20px;
+}
+h1{ font-size:40px;
+}
+h2{ text-align:center;
+    color:darkgoldenrod;
+    padding:10px;
+    font-size:30px;
+}
+label{ color:blue;
+       font-size:20px;
+}
+p{ color:blue;
+   font-size:20px
+}
+input,textarea,select{ border-radius:5px;border:1px solid black;font-size:15px;
+}
+button {
+    background: linear-gradient(to bottom, black, white);
+    
+}
+button:hover {
+    background: linear-gradient(to bottom, white, black);
+    
+}
+#logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: auto;
+}
+</style>
+</head>
+<body>
+<img src="WITlogo.png" alt="logo" id="logo">
+<center><h1>WALCHAND INSTITUTE OF TECHNOLOGY</h1></center>
+<h2>REGISTRATION FORM</h2>
+
+<div class="login">
+<form id="login" method="post" action="action.php">
+
+<label><i class="fa fa-user"></i><b>Full Name : </b></label>
+<input type="text" id="Fname" name="Fname" placeholder="Enter your full name">
+
+<br><br>
+
+<label><b>parents/guardian Name : </b></label>
+<input type="text" id="Pname" name="Pname" placeholder="Enter name">
+
+<br><br>
+
+<label><b>Address : </b></label>
+<textarea rows="4" cols="19" id="address" name="address" placeholder="Enter your address"></textarea>
+
+<br><br>
+
+<label><b>Date of Birth : </b></label>
+<input type="date" name="date" id="date">
+
+<br><br>
+
+<label><b>Gender : </b></label>
+<input type="radio" name="gender" id="male" value="m">
+<label>Male</label>
+<input type="radio" name="gender" id="Female" value="f">
+<label>Female</label>
+
+<br><br>
+
+<label><b>Email : </b></label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
+
+<br><br>
+
+<label><b>Phone-number : </b></label>
+<input type="phone" id="stdentphone" name="stdentphone" placeholder="Enter phone number" pattern="[0-9]{10}">
+
+<br><br>
+
+<label><b>Parents/guardian phone-number : </b></label>
+<input type="phone" id="parentphone" name="parentphone" placeholder="Enter phone number" pattern="[0-9]{10}">
+
+<br><br>
+
+<label><b>choose college : </b></label>
+<select id="college" name="college">
+   <option>Walchand Institute of Technology,solapur</option>
+   <option>N.K.Orchid college,solapur</option>
+   <option>A.G.Patil college,solapur</option>
+   <option>Dr.D.Y.Patil Institute of Technology,pune</option>
+   <option>Walchand Institute of Technology,solapur</option>
+   <option>MIT World Peace University,pune</option>
+   <option>Vishwakarma Institute of Technology,pune</option>
+   <option>Symbiosis Institue of Technology,pune</option>
+</select>
+
+<br><br>
+
+<label><b>Submit college ID: </b></label>
+<input type="file" id="myfile" name="myfile" placeholder="choose file">
+
+<br><br>
+
+<br><br>
+<center>
+<button>
+<input type="submit" id="log" name="log">
+</button>
+</center>
+<br><br>
+
+</form>
+</div>
+</body>
+</html>
